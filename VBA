@@ -199,7 +199,10 @@ Sub FixingEncodingIssues()
     If InStr(cell.Value, "ï¿½") > 0 Then
         cell.Value = Replace(cell.Value, "ï¿½", "ä")
     End If
-Next cell
+    If InStr(cell.Value, "ÃƒÅ½") > 0 Then
+        cell.Value = Replace(cell.Value, "ÃƒÅ½", "Î")
+    End If
+ Next cell
 
 ' Notify user that encoding issues have been fixed
 MsgBox "Bogus characters due to encoding issues are now resolved. Party on Wayne.", vbInformation
