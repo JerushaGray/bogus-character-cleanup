@@ -202,6 +202,12 @@ Sub FixingEncodingIssues()
     If InStr(cell.Value, "ÃƒÅ½") > 0 Then
         cell.Value = Replace(cell.Value, "ÃƒÅ½", "Î")
     End If
+  If InStr(cell.Value, "Ã¤") > 0 Then
+        cell.Value = Replace(cell.Value, "Ã¤", "ä")
+ End If
+  If InStr(cell.Value, "Ã¥") > 0 Then
+        cell.Value = Replace(cell.Value, "Ã¥", "å")
+
  Next cell
 
 ' Notify user that encoding issues have been fixed
