@@ -1,215 +1,216 @@
 Sub FixingEncodingIssues()
     Dim cell As Range
     For Each cell In ActiveSheet.UsedRange.Cells
-    If InStr(cell.Value, "Ã­") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã­", "í")
-    End If
-    If InStr(cell.Value, "Ã–") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã–", "Ö")
-    End If
-    If InStr(cell.Value, "â€“") > 0 Then
-        cell.Value = Replace(cell.Value, "â€“", "-")
-    End If
-    If InStr(cell.Value, "â€“") > 0 Then
-        cell.Value = Replace(cell.Value, "â€“", "-")
-    End If
-    If InStr(cell.Value, "â€”") > 0 Then
-        cell.Value = Replace(cell.Value, "â€”", "-")
-    End If
-	  If InStr(cell.Value, "â€™") > 0 Then
-        cell.Value = Replace(cell.Value, "â€™", "'")
-    End If
-    If InStr(cell.Value, "Ð") > 0 Then
-        cell.Value = Replace(cell.Value, "Ð", "'")
-    End If
-    If InStr(cell.Value, "O&#39;") > 0 Then
-        cell.Value = Replace(cell.Value, "O&#39;", "O'")
-    End If
-    If InStr(cell.Value, "Ã—") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã—", "×")
-    End If
-    If InStr(cell.Value, "Ã ") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã ", "à")
-    End If
-    If InStr(cell.Value, "Â¡") > 0 Then
-        cell.Value = Replace(cell.Value, "Â¡", "¡")
-    End If
-    If InStr(cell.Value, "Ã¡") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¡", "á")
-    End If
-    If InStr(cell.Value, "Ã¦") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¦", "æ")
-    End If
-    If InStr(cell.Value, "Ã¨") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¨", "è")
-    End If
-    If InStr(cell.Value, "Ã´") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã´", "ô")
-    End If
-    If InStr(cell.Value, "Ã¸") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¸", "ø")
-    End If
-    If InStr(cell.Value, "Â¿") > 0 Then
-        cell.Value = Replace(cell.Value, "Â¿", "¿")
-    End If
-    If InStr(cell.Value, "Ã˜") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã˜", "Ø")
-    End If
-    If InStr(cell.Value, "Å‚") > 0 Then
-        cell.Value = Replace(cell.Value, "Å‚", "l")
-    End If
-    If InStr(cell.Value, "â‚¬") > 0 Then
-        cell.Value = Replace(cell.Value, "â‚¬", "€")
-    End If
-    If InStr(cell.Value, "Ã”") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã”", "Ó")
-    End If
-    If InStr(cell.Value, "Ã„") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã„", "Ä")
-    End If
-    If InStr(cell.Value, "Å„") > 0 Then
-        cell.Value = Replace(cell.Value, "Å„", "n")
-    End If
-    If InStr(cell.Value, "Ä‹") > 0 Then
-        cell.Value = Replace(cell.Value, "Ä‹", "E")
-    End If
-    If InStr(cell.Value, "Å›") > 0 Then
-        cell.Value = Replace(cell.Value, "Å›", "s")
-    End If
-    If InStr(cell.Value, "Ã¢") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¢", "â")
-    End If
-    If InStr(cell.Value, "Â£") > 0 Then
-        cell.Value = Replace(cell.Value, "Â£", "£")
-    End If
-    If InStr(cell.Value, "Ã£") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã£", "ã")
-    End If
-    If InStr(cell.Value, "Ã¤") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¤", "á")
-    End If
-    If InStr(cell.Value, "Ã¤") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¤", "ä")
-    End If
-    If InStr(cell.Value, "Ã¥") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¥", "å")
-    End If
-    If InStr(cell.Value, "â€¦") > 0 Then
-        cell.Value = Replace(cell.Value, "â€¦", "…")
-    End If
-    If InStr(cell.Value, "â€˜") > 0 Then
-        cell.Value = Replace(cell.Value, "â€˜", "‘")
-    End If
-    If InStr(cell.Value, "â€“") > 0 Then
-        cell.Value = Replace(cell.Value, "â€“", "–")
-    End If
-    If InStr(cell.Value, "â€”") > 0 Then
-        cell.Value = Replace(cell.Value, "â€”", "–")
-    End If
-    If InStr(cell.Value, "â€") > 0 Then
-        cell.Value = Replace(cell.Value, "â€", "”")
-    End If
-    If InStr(cell.Value, "â€ž") > 0 Then
-        cell.Value = Replace(cell.Value, "â€ž", "„")
-    End If
-    If InStr(cell.Value, "Ã±") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã±", "ñ")
-    End If
-    If InStr(cell.Value, "Ã«") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã«", "ë")
-    End If
-    If InStr(cell.Value, "Ã»") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã»", "û")
-    End If
-    If InStr(cell.Value, "Ã§") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã§", "ç")
-    End If
-    If InStr(cell.Value, "Â©") > 0 Then
-        cell.Value = Replace(cell.Value, "Â©", "©")
-    End If
-    If InStr(cell.Value, "Ã©") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã©", "é")
-    End If
-    If InStr(cell.Value, "Â®") > 0 Then
-        cell.Value = Replace(cell.Value, "Â®", "®")
-    End If
-    If InStr(cell.Value, "Ã®") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã®", "î")
-    End If
-    If InStr(cell.Value, "Â°") > 0 Then
-        cell.Value = Replace(cell.Value, "Â°", "°")
-    End If
-    If InStr(cell.Value, "Ãµ") > 0 Then
-        cell.Value = Replace(cell.Value, "Ãµ", "õ")
-    End If
-	  If InStr(cell.Value, "Ã¶") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¶", "ö")
-    End If
-    If InStr(cell.Value, "Ä…") > 0 Then
-        cell.Value = Replace(cell.Value, "Ä…", "a")
-    End If
-    If InStr(cell.Value, "Ã…") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã…", "Ä")
-    End If
-    If InStr(cell.Value, "Ã†") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã†", "Æ")
-    End If
-    If InStr(cell.Value, "Ä‡") > 0 Then
-        cell.Value = Replace(cell.Value, "Ä‡", "c")
-    End If
-    If InStr(cell.Value, "Ã‡") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã‡", "Ç")
-    End If
-    If InStr(cell.Value, "Ã‰") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã‰", "É")
-    End If
-    If InStr(cell.Value, "Ã¼") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¼", "ü")
-    End If
-    If InStr(cell.Value, "Å¼") > 0 Then
-        cell.Value = Replace(cell.Value, "Å¼", "z")
-    End If
-    If InStr(cell.Value, "Ã¹") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¹", "ù")
-    End If
-    If InStr(cell.Value, "Å¹") > 0 Then
-        cell.Value = Replace(cell.Value, "Å¹", "Z")
-    End If
-    If InStr(cell.Value, "Ã³") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã³", "ó")
-    End If
-    If InStr(cell.Value, "Ãª") > 0 Then
-        cell.Value = Replace(cell.Value, "Ãª", "ê")
-    End If
-    If InStr(cell.Value, "Ãº") > 0 Then
-        cell.Value = Replace(cell.Value, "Ãº", "ú")
-    End If
-    If InStr(cell.Value, "Åº") > 0 Then
-        cell.Value = Replace(cell.Value, "Åº", "z")
-    End If
-    If InStr(cell.Value, "Ãœ") > 0 Then
-        cell.Value = Replace(cell.Value, "Ãœ", "Ü")
-    End If
-    If InStr(cell.Value, "ÃŠ") > 0 Then
-        cell.Value = Replace(cell.Value, "ÃŠ", "Ê")
-    End If
-    If InStr(cell.Value, "ÃŸ") > 0 Then
-        cell.Value = Replace(cell.Value, "ÃŸ", "ß")
-    End If
-    If InStr(cell.Value, "ï¿½") > 0 Then
-        cell.Value = Replace(cell.Value, "ï¿½", "ä")
-    End If
-    If InStr(cell.Value, "ÃƒÅ½") > 0 Then
-        cell.Value = Replace(cell.Value, "ÃƒÅ½", "Î")
-    End If
-  If InStr(cell.Value, "Ã¤") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¤", "ä")
- End If
-  If InStr(cell.Value, "Ã¥") > 0 Then
-        cell.Value = Replace(cell.Value, "Ã¥", "å")
+        If InStr(cell.Value, "Ã­") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã­", "í")
+        End If
+        If InStr(cell.Value, "Ã–") > 0 Then
+            cell.Value = Replace(cell.Value, "ÃÖ", "Ö")
+        End If
+        If InStr(cell.Value, "â€“") > 0 Then
+            cell.Value = Replace(cell.Value, "â€“", "-")
+        End If
+        If InStr(cell.Value, "â€“") > 0 Then
+            cell.Value = Replace(cell.Value, "â€“", "-")
+        End If
+        If InStr(cell.Value, "â€”") > 0 Then
+            cell.Value = Replace(cell.Value, "â€”", "-")
+        End If
+        If InStr(cell.Value, "â€™") > 0 Then
+            cell.Value = Replace(cell.Value, "â€™", "'")
+        End If
+        If InStr(cell.Value, "Ð") > 0 Then
+            cell.Value = Replace(cell.Value, "Ð", "'")
+        End If
+        If InStr(cell.Value, "O&#39;") > 0 Then
+            cell.Value = Replace(cell.Value, "O&#39;", "O'")
+        End If
+        If InStr(cell.Value, "Ã—") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã—", "×")
+        End If
+        If InStr(cell.Value, "Ã ") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã ", "à")
+        End If
+        If InStr(cell.Value, "Â¡") > 0 Then
+            cell.Value = Replace(cell.Value, "Â¡", "¡")
+        End If
+        If InStr(cell.Value, "Ã¡") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¡", "á")
+        End If
+        If InStr(cell.Value, "Ã¦") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¦", "æ")
+        End If
+        If InStr(cell.Value, "Ã¨") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¨", "è")
+        End If
+        If InStr(cell.Value, "Ã´") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã´", "ô")
+        End If
+        If InStr(cell.Value, "Ã¸") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¸", "ø")
+        End If
+        If InStr(cell.Value, "Â¿") > 0 Then
+            cell.Value = Replace(cell.Value, "Â¿", "¿")
+        End If
+        If InStr(cell.Value, "Ã˜") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã˜", "Ø")
+        End If
+        If InStr(cell.Value, "Å‚") > 0 Then
+            cell.Value = Replace(cell.Value, "Å‚", "l")
+        End If
+        If InStr(cell.Value, "â‚¬") > 0 Then
+            cell.Value = Replace(cell.Value, "â‚¬", "€")
+        End If
+        If InStr(cell.Value, "Ã”") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã”", "Ó")
+        End If
+        If InStr(cell.Value, "Ã„") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã„", "Ä")
+        End If
+        If InStr(cell.Value, "Å„") > 0 Then
+            cell.Value = Replace(cell.Value, "Å„", "n")
+        End If
+        If InStr(cell.Value, "Ä‹") > 0 Then
+            cell.Value = Replace(cell.Value, "Ä‹", "E")
+        End If
+        If InStr(cell.Value, "Å›") > 0 Then
+            cell.Value = Replace(cell.Value, "Å›", "s")
+        End If
+        If InStr(cell.Value, "Ã¢") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¢", "â")
+        End If
+        If InStr(cell.Value, "Â£") > 0 Then
+            cell.Value = Replace(cell.Value, "Â£", "£")
+        End If
+        If InStr(cell.Value, "Ã£") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã£", "ã")
+        End If
+        If InStr(cell.Value, "Ã¤") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¤", "á")
+        End If
+        If InStr(cell.Value, "Ã¤") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¤", "ä")
+        End If
+        If InStr(cell.Value, "Ã¥") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¥", "å")
+        End If
+        If InStr(cell.Value, "â€¦") > 0 Then
+            cell.Value = Replace(cell.Value, "â€¦", "…")
+        End If
+        If InStr(cell.Value, "â€˜") > 0 Then
+            cell.Value = Replace(cell.Value, "â€˜", "‘")
+        End If
+        If InStr(cell.Value, "â€“") > 0 Then
+            cell.Value = Replace(cell.Value, "â€“", "–")
+        End If
+        If InStr(cell.Value, "â€”") > 0 Then
+            cell.Value = Replace(cell.Value, "â€”", "–")
+        End If
+        If InStr(cell.Value, "â€") > 0 Then
+            cell.Value = Replace(cell.Value, "â€", "”")
+        End If
+        If InStr(cell.Value, "â€ž") > 0 Then
+            cell.Value = Replace(cell.Value, "â€ž", "„")
+        End If
+        If InStr(cell.Value, "Ã±") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã±", "ñ")
+        End If
+        If InStr(cell.Value, "Ã«") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã«", "ë")
+        End If
+        If InStr(cell.Value, "Ã»") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã»", "û")
+        End If
+        If InStr(cell.Value, "Ã§") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã§", "ç")
+        End If
+        If InStr(cell.Value, "Â©") > 0 Then
+            cell.Value = Replace(cell.Value, "Â©", "©")
+        End If
+        If InStr(cell.Value, "Ã©") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã©", "é")
+        End If
+        If InStr(cell.Value, "Â®") > 0 Then
+            cell.Value = Replace(cell.Value, "Â®", "®")
+        End If
+        If InStr(cell.Value, "Ã®") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã®", "î")
+        End If
+        If InStr(cell.Value, "Â°") > 0 Then
+            cell.Value = Replace(cell.Value, "Â°", "°")
+        End If
+        If InStr(cell.Value, "Ãµ") > 0 Then
+            cell.Value = Replace(cell.Value, "Ãµ", "õ")
+        End If
+        If InStr(cell.Value, "Ã¶") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¶", "ö")
+        End If
+        If InStr(cell.Value, "Ä…") > 0 Then
+            cell.Value = Replace(cell.Value, "Ä…", "a")
+        End If
+        If InStr(cell.Value, "Ã…") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã…", "Ä")
+        End If
+        If InStr(cell.Value, "Ã†") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã†", "Æ")
+        End If
+        If InStr(cell.Value, "Ä‡") > 0 Then
+            cell.Value = Replace(cell.Value, "Ä‡", "c")
+        End If
+        If InStr(cell.Value, "Ã‡") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã‡", "Ç")
+        End If
+        If InStr(cell.Value, "Ã‰") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã‰", "É")
+        End If
+        If InStr(cell.Value, "Ã¼") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¼", "ü")
+        End If
+        If InStr(cell.Value, "Å¼") > 0 Then
+            cell.Value = Replace(cell.Value, "Å¼", "z")
+        End If
+        If InStr(cell.Value, "Ã¹") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¹", "ù")
+        End If
+        If InStr(cell.Value, "Å¹") > 0 Then
+            cell.Value = Replace(cell.Value, "Å¹", "Z")
+        End If
+        If InStr(cell.Value, "Ã³") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã³", "ó")
+        End If
+        If InStr(cell.Value, "Ãª") > 0 Then
+            cell.Value = Replace(cell.Value, "Ãª", "ê")
+        End If
+        If InStr(cell.Value, "Ãº") > 0 Then
+            cell.Value = Replace(cell.Value, "Ãº", "ú")
+        End If
+        If InStr(cell.Value, "Åº") > 0 Then
+            cell.Value = Replace(cell.Value, "Åº", "z")
+        End If
+        If InStr(cell.Value, "Ãœ") > 0 Then
+            cell.Value = Replace(cell.Value, "Ãœ", "Ü")
+        End If
+        If InStr(cell.Value, "ÃŠ") > 0 Then
+            cell.Value = Replace(cell.Value, "ÃŠ", "Ê")
+        End If
+        If InStr(cell.Value, "ÃŸ") > 0 Then
+            cell.Value = Replace(cell.Value, "ÃŸ", "ß")
+        End If
+        If InStr(cell.Value, "ï¿½") > 0 Then
+            cell.Value = Replace(cell.Value, "ï¿½", "ä")
+        End If
+        If InStr(cell.Value, "ÃƒÅ½") > 0 Then
+            cell.Value = Replace(cell.Value, "ÃƒÅ½", "Î")
+        End If
+        If InStr(cell.Value, "Ã¤") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¤", "ä")
+        End If
+        If InStr(cell.Value, "Ã¥") > 0 Then
+            cell.Value = Replace(cell.Value, "Ã¥", "å")
+        End If
+    Next cell
 
- Next cell
-
-' Notify user that encoding issues have been fixed
-MsgBox "Bogus characters due to encoding issues are now resolved. Party on Wayne.", vbInformation
+    ' Notify user that encoding issues have been fixed
+    MsgBox "Bogus characters due to encoding issues are now resolved. Party on Wayne.", vbInformation
 End Sub
+
